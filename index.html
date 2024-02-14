@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch-this-Etch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="app.js" defer></script>
+    <script src="./jscolor.js"></script>
+</head>
+<body>
+    <header class="header-container">
+        <h1 class="main-header">Sketch-this-Etch</h1>
+        <h3 class="sub-header">It's SKETCH TIME</h2>
+    </header>
+
+    <main class="background-container">
+        <div class="center-container">
+            <div class="options-container">
+                <div class="left-tools-container">
+                    <div class="tools-container">
+                        <button class="download-tool-button tool-button">
+                            <i class="download-tool-icon material-symbols-outlined">download</i>
+                        </button>
+                        
+                        <input type="number" name="size-textfield" value="20" max="100" class="size-textfield">   
+                    </div>
+                </div>
+
+                <div class="right-tools-container">
+                    <div class="tools-container">
+                        <button class="pen-tool-button tool-button">
+                            <i class="pen-tool-icon material-symbols-outlined">ink_pen</i>
+                        </button>
+                        <div class="container">
+                            <button class="colour-picker-tool-button tool-button" data-jscolor="{value:'#1100FF', mode: 'HSV', format: 'hex', palette: '#d9dddc #999ea1', onChange: 'updateColour(this)'}">
+                                <!-- <i class="colour-picker-tool-icon material-symbols-outlined">palette</i> -->
+                            </button>
+                        </div>
+                        <button class="eraser-tool-button tool-button">
+                            <i class="eraser-tool-icon material-symbols-outlined">ink_eraser</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container"></div>
+    </main>
+    
+    <footer>
+        The Odin Project - Aiden Molyneaux 2024
+    </footer>
+</body>
+</html>
